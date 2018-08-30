@@ -14,6 +14,7 @@ _A modular website builder using the Django Framework._
     + None so far
 
 Group repository: <https://github.com/NAU-OSS/CS499-Group01-SiteScribe>
+
 Last updated: 2018-08-29
 
 ## Mission Statement
