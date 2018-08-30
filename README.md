@@ -6,13 +6,14 @@ _A modular website builder using the Django Framework._
 
 **This is the Group Repository for _”The [B]est Group”_ (Group 1)**
 
-+ Executive Team Leader: Tanner Massahos - [tanman987](https://github.com/tanman987)
-+ Vice Executive & Project Coordinator: Joseph Remy - [J1411](https://github.com/J1411)
-+ Chief of Team Health and Satisfaction: Julian Bell - [jbell-97](https://github.com/jbell-97)
-+ Chief of the Think Tank: Colton Nunley - [raptorace27](https://github.com/raptorace27)
-+ Co-Contributors:
++ _Executive Team Leader_: Tanner Massahos - [tanman987](https://github.com/tanman987)
++ _Vice Executive & Project Coordinator_: Joseph Remy - [J1411](https://github.com/J1411)
++ _Chief of Team Health and Satisfaction_: Julian Bell - [jbell-97](https://github.com/jbell-97)
++ _Chief of the Think Tank_: Colton Nunley - [raptorace27](https://github.com/raptorace27)
++ _Co-Contributors_:
     + None so far
 
+Group repository: <https://github.com/NAU-OSS/CS499-Group01-SiteScribe>
 Last updated: 2018-08-29
 
 ## Mission Statement
