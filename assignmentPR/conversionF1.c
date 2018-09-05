@@ -9,39 +9,13 @@
 #include <stdlib.h>
 
 // Method pre-declarations
-int charToInt(char* charArray);
 int alphaValidate(char input);
-// int characterToInt(char* charArray);
 int characteristic(char numString[], int* c);
+int charToInt(char* charArray);
 int mantissa(char numString[], int* numerator, int* denominator);
 
 char number[] = "123.456";
 int c, n, d;
-
-
-/*___________________________________________________________________________*/
-//Converts character into an integer
-int charToInt(char* charArray)
-{
-    int finalInt = 0; // The return int
-
-    //Loop through eveey alhpa numeric char in the string and convert
-    //into corresponding int.
-    for (int i = 0; charArray[i] != '\0'; i++)
-    {
-        if(alphaValidate(charArray[i]) == 1)
-        {
-            return -1; // Char is not a integer. 
-        }
-        finalInt = finalInt*10 + charArray[i] - '0'; // - '0' removes all 0's.
-    }
-  
-    // return the final integer that has been converted from the passed string.
-    return finalInt;
-}
-/*___________________________________________________________________________*/
-
-
 
 /*___________________________________________________________________________*/
 //Validates that the given char is actually a number
@@ -73,6 +47,28 @@ int characteristic(char numString[], int* c)
 }
 /*___________________________________________________________________________*/
 
+
+/*___________________________________________________________________________*/
+//Converts character into an integer
+int charToInt(char* charArray)
+{
+    int finalInt = 0; // The return int
+
+    //Loop through eveey alhpa numeric char in the string and convert
+    //into corresponding int.
+    for (int i = 0; charArray[i] != '\0'; i++)
+    {
+        if(alphaValidate(charArray[i]) == 1)
+        {
+            return -1; // Char is not a integer. 
+        }
+        finalInt = finalInt*10 + charArray[i] - '0'; // - '0' removes all 0's.
+    }
+  
+    // return the final integer that has been converted from the passed string.
+    return finalInt;
+}
+/*___________________________________________________________________________*/
 
 /*___________________________________________________________________________*/
 // Returns the part of a float after decimal (significand)
