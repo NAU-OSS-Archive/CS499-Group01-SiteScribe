@@ -9,28 +9,58 @@
 #include <stdlib.h>
 
 // Method pre-declarations
-int characterToInt(char* charArray);
+int charToInt(char* charArray);
+int alphaValidate(char input);
+// int characterToInt(char* charArray);
 int characteristic(char numString[], int* c);
 int mantissa(char numString[], int* numerator, int* denominator);
 
 char number[] = "123.456";
 int c, n, d;
 
-// Converts a char to an integer
-int characterToInt(char* charArray)
-{
-  int result = 0;
-  for (int index = 0; charArray[index] != '\0'; index++)
-  {
-    result = (result*10) + (charArray[index] - '0');
-  }
-  return result;
-}
 
+/*___________________________________________________________________________*/
+//Converts character into an integer
+int charToInt(char* charArray)
+{
+    int finalInt = 0; // The return int
+
+    //Loop through eveey alhpa numeric char in the string and convert
+    //into corresponding int.
+    for (int i = 0; charArray[i] != '\0'; i++)
+    {
+        if(alphaValidate(charArray[i]) == 1)
+        {
+            return -1; // Char is not a integer. 
+        }
+        finalInt = finalInt*10 + charArray[i] - '0'; // - '0' removes all 0's.
+    }
+  
+    // return the final integer that has been converted from the passed string.
+    return finalInt;
+}
+/*___________________________________________________________________________*/
+
+
+
+/*___________________________________________________________________________*/
+//Validates that the given char is actually a number
+int alphaValidate(char input)
+{
+    if(input >= '0' && input <= '9')
+        {
+            return 0;
+        }
+    return '\0';
+}
+/*___________________________________________________________________________*/
+
+
+/*___________________________________________________________________________*/
 // Returns the part of a float before the decimal (like a floor function)
 int characteristic(char numString[], int* c)
 {
-	int index;
+	int index, result;
 	char tempArray[100];
 	for (index = 0; numString[index] != '.' && numString[index] != '\0'; index++)
 	{
@@ -38,14 +68,17 @@ int characteristic(char numString[], int* c)
 	}
 	
 	tempArray[index] = '\0';
-	printf("%s\n", tempArray);
-	return 1;
+	result = charToInt(tempArray);
+	return result;
 }
+/*___________________________________________________________________________*/
 
+
+/*___________________________________________________________________________*/
 // Returns the part of a float after decimal (significand)
 int mantissa(char numString[], int* numerator, int* denominator)
 {
-	int index, index2;
+	int index, index2, result;
 	char tempArray[100];
 	for (index = 0; numString[index] != '.' && numString[index] != '\0'; index++) {}
 	index++;
@@ -54,16 +87,18 @@ int mantissa(char numString[], int* numerator, int* denominator)
 		tempArray[index2] = numString[index];
 		index2++;
 	}
-	printf("%s, %d\n", tempArray, index2);
-	return 1;
+
+	result = charToInt(tempArray);
+	return result;
 }
+/*___________________________________________________________________________*/
 
 // If the conversion from C string to integers can take place
 int main()
 {
 	if(characteristic(number, &c) && mantissa(number, &n, &d))
 	{
-	    //do some math with c, n, and d
+	    printf("Characteristic - %d\n", c);
 	}
 	else
 	{
