@@ -30,15 +30,32 @@ int characterToInt(char* charArray)
 // Returns the part of a float before the decimal (like a floor function)
 int characteristic(char numString[], int* c)
 {
-	printf("%s\n", numString);
-	return 0;
+	int index;
+	char tempArray[100];
+	for (index = 0; numString[index] != '.' && numString[index] != '\0'; index++)
+	{
+		tempArray[index] = numString[index];
+	}
+	
+	tempArray[index] = '\0';
+	printf("%s\n", tempArray);
+	return 1;
 }
 
 // Returns the part of a float after decimal (significand)
 int mantissa(char numString[], int* numerator, int* denominator)
 {
-	printf("%s\n", numString);
-	return 0;
+	int index, index2;
+	char tempArray[100];
+	for (index = 0; numString[index] != '.' && numString[index] != '\0'; index++) {}
+	index++;
+	for (index2 = 0; numString[index] != '\0'; index++)
+	{
+		tempArray[index2] = numString[index];
+		index2++;
+	}
+	printf("%s, %d\n", tempArray, index2);
+	return 1;
 }
 
 // If the conversion from C string to integers can take place
