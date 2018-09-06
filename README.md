@@ -4,7 +4,7 @@ Free Website Generator
 
 _A modular website builder using the Django Framework._
 
-**This is the Group Repository for _”The_ :b:_est Group”_ (Group 1) for CS 499 - "Open Source Software Development" at Northern Arizona University - School of Informatics, Computing, and Cyber Systems. **
+**This is the Group Repository for _”The_ :b:_est Group”_ (Group 1) for CS 499 - "Open Source Software Development" at Northern Arizona University - School of Informatics, Computing, and Cyber Systems.**
 
 + _Executive Team Leader_: Tanner Massahos - [tanman987](https://github.com/tanman987)
 + _Vice Executive & Project Coordinator_: Joseph Remy - [J1411](https://github.com/J1411)
