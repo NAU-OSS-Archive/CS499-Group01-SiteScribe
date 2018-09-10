@@ -1,0 +1,34 @@
+# Commit Template for CS499-Group01-SiteScribe repo.
+#
+# Shortcuts:
+# * To navigate, keyboard arrows and HOME and END keys.
+# * To edit, press 'i' and look for "-- INSERT --" 
+#           at the bottom left-hand corner of the console
+# * To stop editing, press 'ESC'
+# * To save and exit, press 'SHIFT' + ';' (or ':') then type
+#           'q' and hit 'ENTER'
+# * To save WITHOUT changes, press 'SHIFT' + ';' (or ':') then type
+#           'q!' and hit 'ENTER'
+#
+# If you need help, contact @J1411 on GitHub
+
+# Name of feature/tool as epic name
+Feature/Tool Name: 
+
+# GitHub Issue Number(s) i.e. "#0" or (for multiple) "#0, #1, #2, ..."
+Issue Number(s): 
+
+# Short technical description
+Description: 
+
+# Developer notes
+Dev Notes: 
+
+# 50-character subject line
+#
+# 80-character wrapped longer description.
+#
+#
+#
+#
+#
