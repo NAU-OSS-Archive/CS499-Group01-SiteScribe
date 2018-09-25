@@ -62,23 +62,23 @@ bool characteristic(char numString[], int* c)
 //Converts character into an integer.
 int charToInt(char* charArray)
 {
-	printf("result before conversion: %s\n", charArray);
-    int finalInt = 0; // The return int
+    int finalInt = 0, int index =0; // The return int and iterator
 
     //Loop through every alhpa numeric char in the string and convert
     //into corresponding int.
-    for (int i = 0; charArray[i] != '\0'; i++)
+    while(charArray[index] != '\0')
     {
-    	if(alphaValidate(charArray[i]) == false) //char is not an int
+    	if(alphaValidate(charArray[index]) == false) //char is not an int
     	{
     		return -1;
     	}
 
-        finalInt = finalInt*10 + charArray[i] - '0'; // - '0' removes all 0's.
+        finalInt = finalInt * 10 + charArray[index] - '0'; // - '0' removes all 0's.
+
+    	index++
     }
   
     // return the final integer that has been converted from the passed string.
-    printf("result after conversion: %d\n", finalInt);
     return finalInt;
 }
 /*___________________________________________________________________________*/
@@ -135,13 +135,13 @@ int main()
 	//If both functions recieve a valid string
 	if(characteristic(number, &c) && mantissa(number, &n, &d))
 	{
-	    printf("Characteristic - %d\n", c);
+	    printf("Characteristic: %d\n", c);
 	    printf("Mantissa: numerator - %d denominator - %d\n", n, d);
-		return 1;
+		return true;
 	}
 	else
 	{
 	    printf("ERROR: invalid string\n");
-	    return 0;
+	    return false;
 	}
 }
