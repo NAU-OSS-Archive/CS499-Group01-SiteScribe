@@ -61,7 +61,7 @@ Primarily, we will have an issue tracker, discussion board, and wiki sections on
 
 ## Communications Channels 
 
-Slack and Discord channels will be arriving shortly,If you have any questions pertaining to this project feel free to email: massahos@gmail.com
+Slack and Discord channels will be arriving shortly,If you have any questions pertaining to this project feel free to email: massahos@gmail.com or penguins143@gmail.com
 
 ## Documentation
 
