@@ -40,7 +40,18 @@ _To create a free, open-source, generic, and modular website-builder for consume
 + Theme builder - Allows the user to change the global appearance of the website such as color, font, etc.
 
 ## Features and Requirements
-+ To update / create
+#### Features:
+ + Dyanmic Website Builder (customizable)
+ + Built-in CMS
+ + Simple to use
+ + Ability to toggle sub-apps like blog or email
+ + Large selection of unique themes
+ 
+#### Requirements:
+ + Python 3.7.0
+ + Django Web Framework
+ + PostgreSQL
+ + Basic understanding of Web Dev
 
 ## Developer Guidelines - How to contribute
 
