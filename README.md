@@ -50,7 +50,7 @@ Primarily, we will have an issue tracker, discussion board, and wiki sections on
 
 ## Communications Channels 
 
-At present, there are no formally established communication channels, however, there might be a Slack or Discord channel appearing soon.
+Slack and Discord channels will be arriving shortly,If you have any questions pertaining to this project feel free to email: massahos@gmail.com
 
 ## Documentation
 
