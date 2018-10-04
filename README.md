@@ -65,4 +65,4 @@ Slack and Discord channels will be arriving shortly,If you have any questions pe
 
 ## Documentation
 
-Documentation on different versions/patches will be placed on the Wiki.
+Documentation on different versions/patches will be placed on the [Wiki](https://github.com/NAU-OSS/CS499-Group01-SiteScribe/wiki).
