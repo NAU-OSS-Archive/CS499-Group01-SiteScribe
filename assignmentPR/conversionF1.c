@@ -38,8 +38,16 @@ bool alphaValidate(char input)
 /*___________________________________________________________________________*/
 
 
-/*___________________________________________________________________________*/
-// Returns the part of a float before the decimal (like a floor function).
+/*____characteristic()_________________________________________
+
+@brief Grabs all numbers (int) on the left of the decimal '.'
+
+@return	- int               = 0 = false, 1 = true
+@params	- char numString[]  = The string of numbers that was given in main()
+		- int* c            = pointer to the characteristic
+
+@note 123.456 in this case '123' is the characteristic
+*/
 bool characteristic(char numString[], int* c)
 {
 	int index = 0, result;
@@ -63,7 +71,7 @@ bool characteristic(char numString[], int* c)
 /*___________________________________________________________________________*/
 
 
-/*____charToInt() ___________________________________________________________*/
+/*____charToInt()___________________________________________________________*/
 /*
     @brief This func. will take in two strings that will be copied
 
