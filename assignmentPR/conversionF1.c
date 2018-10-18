@@ -20,8 +20,13 @@ int charToInt(char* charArray);
 bool mantissa(char numString[], int* numerator, int* denominator);
 
 
-/*___________________________________________________________________________*/
-//Validates that the given char is actually a number
+/*____alphaValidate()________________________________________________________*/
+/*
+    @brief Returns true if a char represents a int
+
+    @return	- int 			= 0 = False, 1 = true
+    @params	- char* input	= the char to be checked.
+*/
 bool alphaValidate(char input)
 {
     if(input >= '0' && input <= '9')
@@ -33,8 +38,16 @@ bool alphaValidate(char input)
 /*___________________________________________________________________________*/
 
 
-/*___________________________________________________________________________*/
-// Returns the part of a float before the decimal (like a floor function).
+/*____characteristic()_________________________________________
+
+@brief Grabs all numbers (int) on the left of the decimal '.'
+
+@return	- int               = 0 = false, 1 = true
+@params	- char numString[]  = The string of numbers that was given in main()
+		- int* c            = pointer to the characteristic
+
+@note 123.456 in this case '123' is the characteristic
+*/
 bool characteristic(char numString[], int* c)
 {
 	int index = 0, result;
@@ -58,8 +71,17 @@ bool characteristic(char numString[], int* c)
 /*___________________________________________________________________________*/
 
 
-/*___________________________________________________________________________*/
-//Converts character into an integer.
+/*____charToInt()___________________________________________________________*/
+/*
+    @brief This func. will take in two strings that will be copied
+
+    @return	- int 			 = 0 = False, 1 = true
+    @params	- char* string1  = First string to be compared
+		- char* string2  = Second string to be compared
+
+    @note An emmulation of the strcmp func from the <string.h> lib.
+*/
+
 int charToInt(char* charArray)
 {
     int finalInt = 0, int index =0; // The return int and iterator
